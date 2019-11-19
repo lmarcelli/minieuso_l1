@@ -16,8 +16,8 @@ run the bash script by command line passing as arguments: a)the path of the fold
 
 Here below the structures for TLE, Moon and Sun info:
 
-
-   typedef struct {
+    
+    typedef struct {
       Double_t abstime;
       Double_t timeunix;
       Double_t lat;
