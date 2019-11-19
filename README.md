@@ -15,7 +15,9 @@ run the exe by command line passing as arguments: a)level0 file path; b)"TLE" fi
 run the bash script by command line passing as arguments: a)the path of the folder containing Level0 files ; b)"TLE" file (with complete path) to be used; c)cpu_time_offset (daily offset) to be added to timestamp_unix (optional, if not passed the software calculate it automatically). 
 
 Here below the structures for TLE, Moon and Sun info:
-typedef struct {
+
+
+   typedef struct {
       Double_t abstime;
       Double_t timeunix;
       Double_t lat;
