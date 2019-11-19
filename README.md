@@ -33,7 +33,7 @@ typedef struct {
       Double_t Y_geo;				
       Double_t Z_geo;							
     } positionDiss;
-    positionDiss PosizioneISS;
+    
     typedef struct {			
       Double_t Sun_from_ISS_isDay;		
       Double_t Sun_from_ISS_alt;		
@@ -44,7 +44,7 @@ typedef struct {
       Double_t Sun_from_Earth_az;		
       Double_t Sun_from_Earth_dist;
     } positionDSun;
-    positionDSun PosizioneSun;
+    
     typedef struct {		
       Double_t Moon_from_ISS_isDay;		
       Double_t Moon_from_ISS_alt;		
@@ -56,7 +56,6 @@ typedef struct {
       Double_t Moon_from_Earth_dist;
       Double_t FractionMoon;
     } positionDMoon;
-    positionDMoon PosizioneMoon;
     
     
     
