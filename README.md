@@ -13,6 +13,8 @@ There are two possibility:
 run the exe by command line passing as arguments: a)level0 file path; b)"TLE" file (with complete path) to be used; c)cpu_time_offset (daily offset) to be added to timestamp_unix (optional, if not passed the software calculate it automatically). 
 2) Automatically on all level0 file in a folder, running bash script "automatic_l1_v2.sh":
 run the bash script by command line passing as arguments: a)the path of the folder containing Level0 files ; b)"TLE" file (with complete path) to be used; c)time_offset to be added to timestamp_unix/gtu_time (optional, if not passed the software calculate it automatically). 
+3) Automatically on all data set (or more than one runs), running the script "automatic_l1_all_v7.sh" (or similar for the other versions): 
+run the bash script without arguments. Note: in the bash have to be present all the runs, check if it is updated!
 
 Here below the structures for TLE, Moon and Sun info:
 
