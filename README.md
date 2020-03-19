@@ -5,14 +5,18 @@ You need "TLE" file containing TLE, Moon and Sun info. It is necessary to run a 
 Processing Level0 files to Level1:
 - the behaviour of the two "strange" PMTs is corrected;
 - TLE, Moon and Sun info are added to Level0;
-- CPU time offset info is added: to each timestamp_unix"/"gtu_time" is associated a new "timestamp_unix_off"/"gtu_time_off" abtained from Lech "city correspondance lock" or from fit estrapolation fro run 1,3, 8).
+- CPU time offset info is added: to each timestamp_unix"/"gtu_time" is associated a new "timestamp_unix_off"/"gtu_time_off" abtained from Lech "city correspondance lock" or from fit estrapolation fro run 1,3, 8);
+- a version info about Level1 software used to process data is added to texp ttre;
+- pile-up correction (or dead-time) is applied to D1 counts (version 7.1 and following).
 
 How to run Level1 software
-There are two possibility:
+There are three possibility:
 1) On a single file, running the executable directly (useful if you want to process a single file or few files):
 run the exe by command line passing as arguments: a)level0 file path; b)"TLE" file (with complete path) to be used; c)cpu_time_offset (daily offset) to be added to timestamp_unix (optional, if not passed the software calculate it automatically). 
-2) Automatically on all level0 file in a folder, running bash script "automatic_l1_v2.sh":
+2) Automatically on all level0 file in a folder (single run?), running bash script "automatic_l1_v7.sh" (or similar for the other versions):
 run the bash script by command line passing as arguments: a)the path of the folder containing Level0 files ; b)"TLE" file (with complete path) to be used; c)time_offset to be added to timestamp_unix/gtu_time (optional, if not passed the software calculate it automatically). 
+3) Automatically on all data set (or more than one runs), running the script "automatic_l1_all_v7.sh" (or similar for the other versions):
+run the bash script without arguments. Note: in the bash have to be present all the runs, check if it is updated!  
 
 Here below the structures for TLE, Moon and Sun info:
 
